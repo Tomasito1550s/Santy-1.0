@@ -45,4 +45,3 @@ def reserve():
         mongo.db.appointments.insert_one({'date': date, 'time': time, 'name': name, 'status': 'Pending'})
         flash('Appointment reserved successfully!')
         return redirect(url_for('main.index'))
-
