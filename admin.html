@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Appointments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <p><a href="{{ url_for('main.logout') }}">Logout</a></p>
+    <h2>Appointments</h2>
+    {% for appointment in appointments %}
+    <div class="appointment">
+        <p><strong>Date:</strong> {{ appointment['date'] }}</p>
+        <p><strong>Time:</strong> {{ appointment['time'] }}</p>
+        <p><strong>Name:</strong> {{ appointment['name'] }}</p>
+        <p><strong>Status:</strong> {{ appointment['status'] }}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>
+
