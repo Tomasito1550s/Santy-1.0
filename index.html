@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Turnos</title>
+    <!-- Enlace a CSS -->
+    <link rel="stylesheet" href="app/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reservar Turnos</h1>
+    </header>
+    <main>
+        <form id="appointmentForm">
+            <div>
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+                <label for="time">Hora:</label>
+                <select id="time" required>
+                    <option value="">Seleccione una hora</option>                
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                </select>
+            </div>
+            <div>
+                <label for="name">Nombre y Apellido:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <button type="submit">Reservar</button>
+        </form>
+    </main>
+    <!-- Enlace a JavaScript -->
+    <script src="app/script.js"></script>
+</body>
+</html>
+
+
